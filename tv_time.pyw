@@ -13,16 +13,16 @@ from bs4 import BeautifulSoup
 
 DIR_NAME = os.path.dirname(__file__)
 
-with open(os.path.join(DIR_NAME, 'info.json')) as f:
-    info = json.load(f)
+with open(os.path.join(DIR_NAME, 'config.json')) as f:
+    config = json.load(f)
 
-WEBSITE_NAME = info['website']['name']
-WEBSITE_PREFIX = info['website']['prefix']
-WEBSITE_SPACE = info['website']['space']
-WEBSITE_SUFFIX = info['website']['suffix']
+WEBSITE_NAME = config['website']['name']
+WEBSITE_PREFIX = config['website']['prefix']
+WEBSITE_SPACE = config['website']['space']
+WEBSITE_SUFFIX = config['website']['suffix']
 
-USERNAME = info['login']['username']
-PASSWORD = info['login']['password']
+USERNAME = config['login']['username']
+PASSWORD = config['login']['password']
 
 DATE_TODAY = str(datetime.date.today())
 DATE_YESTERDAY = str(datetime.date.today() - datetime.timedelta(1))
