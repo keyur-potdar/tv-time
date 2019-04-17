@@ -1,0 +1,12 @@
+{
+  "website": {
+    "name": "https://bayhypertpb.be",
+    "prefix": "/s/?q=",
+    "space": "+",
+    "suffix": "&page=0&orderby=99"
+  },
+  "login": {
+    "username": "",
+    "password": ""
+  }
+}
