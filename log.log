@@ -1,4 +1,0 @@
-2019-04-17 19:14:52,444 Starting new HTTPS connection (1): www.tvtime.com:443
-2019-04-17 19:14:53,179 https://www.tvtime.com:443 "POST /signin HTTP/1.1" 302 96
-2019-04-17 19:14:53,835 https://www.tvtime.com:443 "GET /en HTTP/1.1" 200 None
-2019-04-17 19:14:54,397 https://www.tvtime.com:443 "GET /en/user/5193560/calendar HTTP/1.1" 200 11598
