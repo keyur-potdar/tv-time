@@ -27,7 +27,6 @@ PASSWORD = config['login']['password']
 DATE_TODAY = str(datetime.date.today())
 DATE_YESTERDAY = str(datetime.date.today() - datetime.timedelta(1))
 
-file_name = os.path.splitext(os.path.basename(__file__))[0]
 JSON_FILE = os.path.join(DIR_NAME, 'shows.json')
 LOG_FILE = os.path.join(DIR_NAME, 'log.log')
 logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG, format='%(asctime)s %(message)s')
