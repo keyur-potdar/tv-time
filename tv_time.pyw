@@ -235,7 +235,7 @@ def display_shows():
         for show in shows_json[DATE_TODAY]:
             tk.Label(root, text='{} {}'.format(show['name'], format_episode(show['season'], show['episode']))) \
                 .grid(row=curr_row, column=0, padx=10, pady=1, sticky='w')
-            tk.Button(root, text='Download', command=lambda: show_torrents(show['url'])) \
+            tk.Button(root, text='Download', command=lambda url=show['url']: show_torrents(url)) \
                 .grid(row=curr_row, column=1, padx=10, pady=1, sticky='e')
             curr_row += 1
 
@@ -257,7 +257,7 @@ def display_shows():
         for show in shows_json[DATE_YESTERDAY]:
             tk.Label(root, text='{} {}'.format(show['name'], format_episode(show['season'], show['episode']))) \
                 .grid(row=curr_row, column=0, padx=10, pady=1, sticky='w')
-            tk.Button(root, text='Download', command=lambda: show_torrents(show['url'])) \
+            tk.Button(root, text='Download', command=lambda url=show['url']: show_torrents(url)) \
                 .grid(row=curr_row, column=1, padx=10, pady=1, sticky='e')
             curr_row += 1
 
