@@ -179,7 +179,7 @@ def scrape_shows_list():
 
     # Save scraped data in a file for future use
     with open(JSON_FILE, 'w') as f:
-        json.dump(shows_json, f)
+        json.dump(shows_json, f, indent=2)
 
     return shows_json
 
