@@ -28,7 +28,7 @@ DATE_TODAY = str(datetime.date.today())
 DATE_YESTERDAY = str(datetime.date.today() - datetime.timedelta(1))
 
 JSON_FILE = os.path.join(DIR_NAME, 'shows.json')
-LOG_FILE = os.path.join(DIR_NAME, 'log.log')
+LOG_FILE = os.path.join(DIR_NAME, 'logs.txt')
 logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG, format='%(asctime)s %(message)s')
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 '
