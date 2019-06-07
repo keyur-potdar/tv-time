@@ -154,7 +154,7 @@ def scrape_shows_list():
         r = s.post(base_url+'/signin', data=form, headers=headers)
         soup = BeautifulSoup(r.text, 'lxml')
         try:
-            calendar = soup.find('li', class_='calendar ').a['href']
+            calendar = soup.find('li', class_='calendar').a['href']
         except AttributeError:
             logging.info('Invalid login credentials.')
             return
