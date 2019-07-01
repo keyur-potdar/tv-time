@@ -9,7 +9,7 @@ Python script to automatically download new episodes of TV shows that you watch.
 	 git clone https://github.com/KeyurPotdar/tv-time.git
 	 ```
  - Edit the `config_sample.json` file to save the username and password
- - Rename the `config_sample.json` file to `config.json`.
+ - Rename the `config_sample.json` file to `config.json`
  - Install the required Python libraries using
 	```
 	pip install -r requirements.txt
