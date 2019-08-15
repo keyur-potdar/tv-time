@@ -1,5 +1,5 @@
 # tv-time
-Python script to automatically download new episodes of TV shows that you watch.
+Python script (simple GUI) to automatically download new episodes of TV shows that you watch.
 
 ### Usage
  - Install the latest version of  Python from [https://www.python.org/downloads/](https://www.python.org/downloads/)
