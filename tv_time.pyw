@@ -163,7 +163,7 @@ def scrape_shows_list():
         r = s.get(base_url+calendar, headers=headers)
     # Extract the data from the page and convert it to JSON
     script = re.findall(r'calendar\s*:\s*\'(\[{.*}])', r.text)[0]
-    data = json.loads(script.replace(r'\&quot;', '"').replace(r'\&#039;', "'"))
+    data = json.loads(script.replace(r'\\\&quot;', '').replace(r'\&quot;', '"').replace(r'\&#039;', "'"))
     # print(json.dumps(data, indent=4))
 
     shows_json = {DATE_TODAY: [], DATE_YESTERDAY: []}
