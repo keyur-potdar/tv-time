@@ -148,10 +148,11 @@ def scrape_shows_list():
         form = {
             'username': USERNAME,
             'password': PASSWORD,
-            'redirect_path': base_url + '/en'
+            'redirect_path': 'https://www.tvtime.com/en/to-watch'
         }
         # Login
-        r = s.post(base_url+'/signin', data=form, headers=headers)
+        login_url = 'https://www.tvtime.com/signin?username={}&password={}'.format(USERNAME, PASSWORD)
+        r = s.post(login_url, data=form, headers=headers)
         soup = BeautifulSoup(r.text, 'lxml')
         try:
             calendar = soup.find('li', class_='calendar').a['href']
